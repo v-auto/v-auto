@@ -1,0 +1,13 @@
+{
+  "name": "v_auto_ACL",
+  "base": "ACL",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

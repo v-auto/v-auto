@@ -1,0 +1,28 @@
+{
+  "name": "v_autoUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "password",
+    "verificationToken"
+  ],
+  "properties": {
+    "phone": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accessTokens": {
+      "type": "belongsTo",
+      "model": "v_auto_AccessToken",
+      "foreignKey": "verificationToken"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

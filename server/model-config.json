@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "v_autoUser": {
+    "dataSource": "mysql_db",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "registerUser": true
+        }
+      }
+    }
+  },
+  "v_auto_AccessToken": {
+    "dataSource": "mysql_db",
+    "public": false
+  },
+  "v_auto_ACL": {
+    "dataSource": "mysql_db",
+    "public": false
+  },
+  "v_auto_test": {
+    "dataSource": "mysql_db",
+    "public": true
+  }
+}
